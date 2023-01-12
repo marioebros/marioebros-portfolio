@@ -1,7 +1,5 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -13,8 +11,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section className=" bg-green-900 min-h-screen">
-          <h1></h1>
+        <section className="min-h-screen">
+          <nav>
+            <h1></h1>
+            <ul>
+              <li></li>
+              <li>
+                <a href="#">Resume</a>
+              </li>
+            </ul>
+          </nav>
         </section>
       </main>
     </div>
