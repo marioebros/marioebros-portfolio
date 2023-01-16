@@ -7,7 +7,10 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
-import marioebros from "../public/marioebros.jpeg";
+import logo from "../public/logo.png";
+/* import design from "..public/Coding-Html-icon.png";
+import code from "..public/design.png";
+import consulting from "..public/consulting.png"; */
 
 export default function Home() {
   return (
@@ -51,7 +54,40 @@ export default function Home() {
             <AiFillGithub />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-20">
-            <Image src={marioebros} />
+            <Image
+              className="bg-opacity-0"
+              src={logo}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </section>
+
+        {/* Page II */}
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I Offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Since beginning my journey as a freelance developer, I've
+              completed remote courses in{" "}
+              <span className="text-orange-600">
+                Web Programming Foundations,{" "}
+              </span>
+              <span className="text-orange-600">HTML, CSS, & JavaScript, </span>
+              <span className="text-orange-600">
+                React, Next.js, & jQuery,{" "}
+              </span>
+              <span className="text-orange-600">
+                Solidity, Smart Contracts, & Cryptography.
+              </span>
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I offer a range of services including...
+            </p>
+          </div>
+          <div>
+            <div>{/* <Image src={design} /> */}</div>
           </div>
         </section>
       </main>
