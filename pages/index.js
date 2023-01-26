@@ -87,7 +87,20 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <div>{/* <Image src={design} /> */}</div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              {/* <Image src={design} width={100} height={100} /> */}
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                {" "}
+                Creating elegant designs suited for your needs.
+              </p>
+              <h4 className="py-4 text-orange-600">Tools I use</h4>
+              <p className="text-gray-600 py-1">JavaScript</p>
+              <p className="text-gray-600 py-1">React</p>
+              <p className="text-gray-600 py-1">Next.js</p>
+            </div>
           </div>
         </section>
       </main>
