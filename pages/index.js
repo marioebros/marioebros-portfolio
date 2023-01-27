@@ -10,7 +10,14 @@ import Image from "next/image";
 import logo from "../public/logo.png";
 /* import design from "..public/Coding-Html-icon.png";
 import code from "..public/design.png";
-import consulting from "..public/consulting.png"; */
+import consulting from "..public/consulting.png"; 
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
+*/
 
 export default function Home() {
   return (
@@ -101,6 +108,56 @@ export default function Home() {
               <p className="text-gray-600 py-1">React</p>
               <p className="text-gray-600 py-1">Next.js</p>
             </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              {/* <Image src={code} width={100} height={100} /> */}
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                {" "}
+                Creating elegant designs suited for your needs.
+              </p>
+              <h4 className="py-4 text-orange-600">Tools I use</h4>
+              <p className="text-gray-600 py-1">JavaScript</p>
+              <p className="text-gray-600 py-1">React</p>
+              <p className="text-gray-600 py-1">Next.js</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              {/* <Image src={consulting} width={100} height={100} /> */}
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                {" "}
+                Creating elegant designs suited for your needs.
+              </p>
+              <h4 className="py-4 text-orange-600">Tools I use</h4>
+              <p className="text-gray-600 py-1">JavaScript</p>
+              <p className="text-gray-600 py-1">React</p>
+              <p className="text-gray-600 py-1">Next.js</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Since beginning my journey as a freelance developer, I've
+              completed remote courses in{" "}
+              <span className="text-orange-600">
+                Web Programming Foundations,{" "}
+              </span>
+              <span className="text-orange-600">HTML, CSS, & JavaScript, </span>
+              <span className="text-orange-600">
+                React, Next.js, & jQuery,{" "}
+              </span>
+              <span className="text-orange-600">
+                Solidity, Smart Contracts, & Cryptography.
+              </span>
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I offer a range of services including...
+            </p>
           </div>
         </section>
       </main>
