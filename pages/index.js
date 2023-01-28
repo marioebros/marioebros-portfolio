@@ -17,7 +17,7 @@ import web2 from "../public/web2.png";
 import toDo from "../public/toDo-list.png";
 import Library from "../public/pocket-library.png";
 import Restaurant from "../public/g-s.png";
-import Calculator from "../public/pocket-library.png";
+import Calculator from "../public/calculator-app.png";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-Playfair">DevelopedBymarioeBros</h1>
@@ -48,11 +48,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-orange-500 font-medium">
+            <h2 className="text-5xl py-2 text-orange-500 font-medium md:text-6xl">
               Mario M. Elizalde
             </h2>
-            <h3 className="text-2xl py-2">Software Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">The Man.</p>
+            <h3 className="text-2xl py-2 md:text-3xl">Software Developer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+              The Man.
+            </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-800">
             <AiFillTwitterCircle />
@@ -60,7 +62,7 @@ export default function Home() {
             <AiFillInstagram />
             <AiFillGithub />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-20">
+          <div className="relative mx-auto bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image
               className="bg-opacity-0"
               src={logo}
@@ -70,30 +72,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Page II */}
+        {/* Page II - Education & Certifications */}
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Professional Experience</h3>
+            <h3 className="text-3xl py-1">Education & Certifications</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
               Since beginning my journey as a freelance developer, I've
               completed remote courses in{" "}
-              <span className="text-orange-600">
-                Web Programming Foundations,{" "}
-              </span>
-              <span className="text-orange-600">HTML, CSS, & JavaScript, </span>
-              <span className="text-orange-600">
-                React, Next.js, & jQuery,{" "}
-              </span>
-              <span className="text-orange-600">
-                Solidity, Smart Contracts, & Cryptography.
-              </span>
             </p>
             <p className="text-md py-2 leading-8 text-gray-800">
               I offer a range of services including...
             </p>
           </div>
-          <div>
+          <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               {/* <Image src={design} width={100} height={100} /> */}
               <h3 className="text-lg font-medium pt-8 pb-2">
@@ -139,7 +131,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Page III */}
+        {/* Page III - Professional Experience */}
 
         <section>
           <div>
@@ -180,7 +172,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Page IV */}
+        {/* Page IV - Portfolio */}
 
         <section>
           <div>
@@ -203,7 +195,29 @@ export default function Home() {
               I offer a range of services including...
             </p>
           </div>
+          <div className="flex flex-col gap-10">
+            {/* <div>
+              <Image src={web1} />
+            </div>
+            <div>
+              <Image src={web2} />
+            </div> */}
+            <div>
+              <Image src={toDo} />
+            </div>
+            <div>
+              <Image src={Library} />
+            </div>
+            <div>
+              <Image src={Restaurant} />
+            </div>
+            <div>
+              <Image src={Calculator} />
+            </div>
+          </div>
         </section>
+
+        {/* Page V - Contact */}
       </main>
     </div>
   );
