@@ -18,8 +18,10 @@ import toDo from "../public/toDo-list.png";
 import Library from "../public/pocket-library.png";
 import Restaurant from "../public/g-s.png";
 import Calculator from "../public/calculator-app.png";
+import { useState } from "react";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <div>
       <Head>
@@ -195,24 +197,48 @@ export default function Home() {
               I offer a range of services including...
             </p>
           </div>
-          <div className="flex flex-col gap-10">
-            {/* <div>
-              <Image src={web1} />
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            {/* <div className="basis-1/2 flex-1">
+              <Image src={web1} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
             </div>
-            <div>
-              <Image src={web2} />
+            <div className="basis-1/2 flex-1">
+              <Image src={web2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
             </div> */}
-            <div>
-              <Image src={toDo} />
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={toDo}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
-            <div>
-              <Image src={Library} />
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={Library}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
-            <div>
-              <Image src={Restaurant} />
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={Restaurant}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
-            <div>
-              <Image src={Calculator} />
+            <div className="basis-1/2 flex-1">
+              <Image
+                src={Calculator}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
           </div>
         </section>
